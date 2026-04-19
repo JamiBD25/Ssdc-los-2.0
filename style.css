@@ -1,1 +1,127 @@
+/* 🔷 বেসিক */
+body {
+    margin: 0;
+    font-family: Arial;
+    background: black;
+    color: white;
+    scroll-behavior: smooth;
+}
 
+/* 🔷 ন্যাভবার */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 12px 20px;
+    box-shadow: 0 2px 10px rgba(0, 150, 255, 0.2); /* 🔥 হালকা নীল শেডো */
+    position: sticky;
+    top: 0;
+}
+
+/* 🔷 লোগো */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* 🔷 মেনু */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 🔥 Hover animation */
+.nav-links li:hover {
+    color: #00aaff;
+    transform: scale(1.1);
+}
+
+/* 🔷 হ্যামবার্গার */
+.menu-toggle {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* 🔷 হোম */
+.home {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(black, #0a1f44);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* 🔷 Fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔷 সেকশন */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+/* 🔷 টেবিল */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.2); /* 🔥 গ্লো ইফেক্ট */
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+/* 🔷 বাটন (যদি add করো later) */
+button {
+    background: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 150, 255, 0.3);
+}
+
+/* 🔥 Hover */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 150, 255, 0.5);
+}
+
+/* 🔷 মোবাইল */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: black;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
