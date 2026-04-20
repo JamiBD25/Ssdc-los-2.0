@@ -1,20 +1,8 @@
-// 🔷 হ্যামবার্গার টগল
-function toggleMenu() {
-    let menu = document.getElementById("navLinks");
-    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+function toggleDrop(id){
+let el=document.getElementById(id);
+el.style.display=(el.style.display==="block")?"none":"block";
 }
 
-// 🔷 স্মুথ স্ক্রল + হালকা delay effect
-function scrollToSection(id) {
-    let section = document.getElementById(id);
-
-    section.style.opacity = "0.5";
-
-    section.scrollIntoView({
-        behavior: "smooth"
-    });
-
-    setTimeout(() => {
-        section.style.opacity = "1";
-    }, 500);
+function toggleRow(id){
+document.getElementById(id).classList.toggle("hidden");
 }
