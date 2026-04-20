@@ -203,3 +203,211 @@ padding:10px;
 display:flex;
 }
 }
+/* =========================
+   BASE DESIGN
+========================= */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:linear-gradient(180deg,#000,#050b1a,#000);
+color:white;
+}
+
+/* =========================
+   NAVBAR (CLEAN + GLASS)
+========================= */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+background:rgba(10,10,20,0.85);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:1000;
+border-bottom:1px solid rgba(0,170,255,0.2);
+}
+
+.navbar h2{
+color:#00aaff;
+letter-spacing:1px;
+}
+
+/* =========================
+   LINKS
+========================= */
+.nav-links{
+display:flex;
+gap:15px;
+list-style:none;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#00aaff;
+}
+
+/* =========================
+   HOME HERO
+========================= */
+.home{
+text-align:center;
+padding:90px 20px;
+background:radial-gradient(circle,#0a1f44,#000);
+}
+
+.title{
+font-family:'Creepster',cursive;
+font-size:42px;
+color:#00aaff;
+text-shadow:0 0 15px #00aaff;
+}
+
+/* =========================
+   SECTION DESIGN
+========================= */
+section{
+padding:50px 20px;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+.drop-btn{
+background:#111;
+border:1px solid #00aaff;
+color:white;
+padding:10px 15px;
+margin:5px;
+cursor:pointer;
+border-radius:8px;
+transition:0.3s;
+}
+
+.drop-btn:hover{
+background:#00aaff;
+color:black;
+}
+
+.drop{
+display:none;
+padding:12px;
+margin-top:5px;
+background:rgba(255,255,255,0.05);
+border-left:3px solid #00aaff;
+}
+
+/* =========================
+   TABLE DESIGN
+========================= */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th,td{
+padding:12px;
+border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+/* Rank colors */
+.gold{color:gold;}
+.silver{color:silver;}
+.bronze{color:#cd7f32;}
+
+.expand-btn{
+background:none;
+border:none;
+color:#00aaff;
+cursor:pointer;
+}
+
+/* =========================
+   HEADS CARDS
+========================= */
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+}
+
+.card{
+width:200px;
+background:rgba(255,255,255,0.05);
+padding:15px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+box-shadow:0 0 10px rgba(0,150,255,0.1);
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px rgba(0,150,255,0.4);
+}
+
+.card img{
+width:90px;
+height:90px;
+border-radius:50%;
+border:2px solid #00aaff;
+margin-bottom:10px;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+.social a{
+display:inline-block;
+margin:5px;
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.social a:hover{
+color:#00aaff;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+.timeline{
+margin-top:10px;
+font-size:13px;
+opacity:0.8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer{
+text-align:center;
+padding:20px;
+background:#050a15;
+border-top:1px solid rgba(0,170,255,0.2);
+margin-top:30px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media(max-width:768px){
+
+.nav-links{
+flex-direction:column;
+}
+}
