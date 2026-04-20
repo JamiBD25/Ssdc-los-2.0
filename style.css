@@ -1,211 +1,5 @@
-
 /* =========================
-   GLOBAL RESET + BASE
-========================= */
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial, sans-serif;
-background:linear-gradient(180deg,#000,#0a0a1a);
-color:white;
-scroll-behavior:smooth;
-}
-
-/* =========================
-   NAVBAR (GLASS + FIXED)
-========================= */
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:12px 20px;
-background:rgba(17,17,17,0.8);
-backdrop-filter:blur(10px);
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 2px 15px rgba(0,150,255,0.2);
-}
-
-.navbar h2{
-color:#00aaff;
-}
-
-/* =========================
-   HAMBURGER MENU
-========================= */
-.menu-toggle{
-display:none;
-font-size:26px;
-cursor:pointer;
-}
-
-.nav-links{
-display:flex;
-gap:15px;
-list-style:none;
-}
-
-.nav-links a{
-color:white;
-text-decoration:none;
-transition:0.3s;
-}
-
-.nav-links a:hover{
-color:#00aaff;
-}
-
-/* =========================
-   HOME TITLE
-========================= */
-.title{
-font-family:'Creepster',cursive;
-font-size:40px;
-color:#00aaff;
-text-shadow:0 0 10px #00aaff;
-}
-
-.home{
-text-align:center;
-padding:80px 20px;
-}
-
-/* =========================
-   DROPDOWN (PRO STYLE)
-========================= */
-.drop-btn{
-background:#111;
-color:white;
-padding:10px 15px;
-border:none;
-margin:5px;
-cursor:pointer;
-border-radius:8px;
-transition:0.3s;
-}
-
-.drop-btn:hover{
-background:#00aaff;
-color:black;
-}
-
-.drop{
-display:none;
-padding:12px;
-background:rgba(255,255,255,0.05);
-border-left:3px solid #00aaff;
-margin-bottom:10px;
-border-radius:6px;
-}
-
-/* =========================
-   TABLE (INLINE DROPDOWN)
-========================= */
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
-}
-
-th,td{
-padding:12px;
-border-bottom:1px solid rgba(255,255,255,0.2);
-text-align:left;
-}
-
-.gold{color:gold;}
-.silver{color:silver;}
-.bronze{color:#cd7f32;}
-
-.expand-btn{
-background:none;
-border:none;
-color:#00aaff;
-cursor:pointer;
-font-size:16px;
-}
-
-/* hidden row */
-.hidden{
-display:none;
-}
-
-/* =========================
-   HEADS CARD (IMAGE STYLE)
-========================= */
-.cards{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-justify-content:center;
-padding:20px;
-}
-
-.card{
-width:180px;
-background:rgba(255,255,255,0.05);
-border-radius:12px;
-padding:15px;
-text-align:center;
-transition:0.3s;
-box-shadow:0 0 10px rgba(0,150,255,0.1);
-}
-
-.card:hover{
-transform:translateY(-5px);
-box-shadow:0 0 20px rgba(0,150,255,0.4);
-}
-
-.card img{
-width:80px;
-height:80px;
-border-radius:50%;
-object-fit:cover;
-margin-bottom:10px;
-border:2px solid #00aaff;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer{
-text-align:center;
-padding:20px;
-font-size:14px;
-opacity:0.7;
-}
-
-/* =========================
-   MOBILE NAVBAR
-========================= */
-@media(max-width:768px){
-
-.menu-toggle{
-display:block;
-}
-
-.nav-links{
-display:none;
-flex-direction:column;
-background:#111;
-position:absolute;
-top:60px;
-right:0;
-width:200px;
-padding:10px;
-}
-
-.nav-links.active{
-display:flex;
-}
-}
-/* =========================
-   BASE DESIGN
+   RESET + BASE
 ========================= */
 *{
 margin:0;
@@ -217,32 +11,36 @@ body{
 font-family:Arial, sans-serif;
 background:linear-gradient(180deg,#000,#050b1a,#000);
 color:white;
+scroll-behavior:smooth;
 }
 
 /* =========================
-   NAVBAR (CLEAN + GLASS)
+   NAVBAR
 ========================= */
 .navbar{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 20px;
-background:rgba(10,10,20,0.85);
-backdrop-filter:blur(10px);
+padding:12px 18px;
+background:rgba(10,10,20,0.9);
 position:sticky;
 top:0;
 z-index:1000;
 border-bottom:1px solid rgba(0,170,255,0.2);
 }
 
-.navbar h2{
-color:#00aaff;
-letter-spacing:1px;
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
 }
 
-/* =========================
-   LINKS
-========================= */
+.logo img{
+width:38px;
+height:38px;
+border-radius:50%;
+}
+
 .nav-links{
 display:flex;
 gap:15px;
@@ -260,7 +58,16 @@ color:#00aaff;
 }
 
 /* =========================
-   HOME HERO
+   HAMBURGER
+========================= */
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* =========================
+   HOME
 ========================= */
 .home{
 text-align:center;
@@ -276,7 +83,7 @@ text-shadow:0 0 15px #00aaff;
 }
 
 /* =========================
-   SECTION DESIGN
+   SECTION
 ========================= */
 section{
 padding:50px 20px;
@@ -310,7 +117,7 @@ border-left:3px solid #00aaff;
 }
 
 /* =========================
-   TABLE DESIGN
+   TABLE
 ========================= */
 table{
 width:100%;
@@ -323,7 +130,6 @@ padding:12px;
 border-bottom:1px solid rgba(255,255,255,0.2);
 }
 
-/* Rank colors */
 .gold{color:gold;}
 .silver{color:silver;}
 .bronze{color:#cd7f32;}
@@ -335,8 +141,13 @@ color:#00aaff;
 cursor:pointer;
 }
 
+/* hidden row */
+.hidden{
+display:none;
+}
+
 /* =========================
-   HEADS CARDS
+   CARDS
 ========================= */
 .cards{
 display:flex;
@@ -369,7 +180,7 @@ margin-bottom:10px;
 }
 
 /* =========================
-   SOCIAL ICONS
+   SOCIAL
 ========================= */
 .social a{
 display:inline-block;
@@ -408,71 +219,6 @@ margin-top:30px;
 ========================= */
 @media(max-width:768px){
 
-.nav-links{
-flex-direction:column;
-}
-}
-/* 🔷 logo style */
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.logo img{
-width:40px;
-height:40px;
-border-radius:50%;
-object-fit:cover;
-border:2px solid #00aaff;
-}
-/* 🔷 navbar layout fix */
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:12px 20px;
-background:rgba(10,10,20,0.9);
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-/* 🔷 logo */
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.logo img{
-width:38px;
-height:38px;
-border-radius:50%;
-}
-
-/* 🔷 menu */
-.nav-links{
-display:flex;
-gap:15px;
-list-style:none;
-}
-
-.nav-links a{
-color:white;
-text-decoration:none;
-}
-
-/* 🔥 hamburger */
-.menu-toggle{
-display:none;
-font-size:26px;
-cursor:pointer;
-}
-
-/* 📱 mobile */
-@media(max-width:768px){
-
 .menu-toggle{
 display:block;
 }
@@ -488,134 +234,6 @@ width:200px;
 padding:10px;
 }
 
-.nav-links.active{
-display:flex;
-}
-}
-/* 🔷 navbar layout fix */
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:12px 20px;
-background:rgba(10,10,20,0.9);
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-/* 🔷 logo */
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.logo img{
-width:38px;
-height:38px;
-border-radius:50%;
-}
-
-/* 🔷 menu */
-.nav-links{
-display:flex;
-gap:15px;
-list-style:none;
-}
-
-.nav-links a{
-color:white;
-text-decoration:none;
-}
-
-/* 🔥 hamburger */
-.menu-toggle{
-display:none;
-font-size:26px;
-cursor:pointer;
-}
-
-/* 📱 mobile */
-@media(max-width:768px){
-
-.menu-toggle{
-display:block;
-}
-
-.nav-links{
-display:none;
-flex-direction:column;
-position:absolute;
-top:60px;
-right:0;
-background:#111;
-width:200px;
-padding:10px;
-}
-
-.nav-links.active{
-display:flex;
-}
-}/* NAVBAR */
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:12px 18px;
-background:#111;
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-/* LOGO */
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.logo img{
-width:40px;
-height:40px;
-border-radius:50%;
-}
-
-/* MENU */
-.nav-links{
-display:flex;
-gap:15px;
-list-style:none;
-}
-
-/* HAMBURGER */
-.menu-toggle{
-display:none;
-font-size:28px;
-cursor:pointer;
-}
-
-/* 📱 MOBILE FIX */
-@media(max-width:768px){
-
-.menu-toggle{
-display:block;
-}
-
-/* 🔥 IMPORTANT: hidden by default */
-.nav-links{
-display:none;
-flex-direction:column;
-position:absolute;
-top:60px;
-right:0;
-background:#111;
-width:200px;
-padding:10px;
-}
-
-/* 🔥 when active */
 .nav-links.active{
 display:flex;
 }
