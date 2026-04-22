@@ -295,4 +295,33 @@ text-align:center;
 font-weight:bold;
 margin-bottom:15px;
 color:white;
+} 
+/* ================= FORCE TABLE FIX ================= */
+
+/* table full */
+table{
+width:100% !important;
+border-collapse:collapse !important;
+margin-top:20px;
+}
+
+/* সব data center + white border */
+table th,
+table td{
+text-align:center !important;
+padding:12px !important;
+border:1px solid white !important;
+}
+
+/* header bold + blue */
+table th{
+font-weight:bold !important;
+color:#00aaff !important;
+}
+
+/* round title center */
+section h2{
+text-align:center !important;
+font-weight:bold !important;
+margin:20px 0 !important;
 }
