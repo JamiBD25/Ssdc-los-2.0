@@ -290,3 +290,33 @@ font-weight:bold;
 margin:20px 0;
 color:white;
 }
+/* ===== FINAL FORCE TABLE FIX ===== */
+
+table{
+width:100% !important;
+border-collapse:collapse !important;
+}
+
+/* সব cell */
+table, th, td{
+border:1px solid white !important;
+}
+
+/* text center */
+th, td{
+text-align:center !important;
+padding:12px !important;
+}
+
+/* header */
+th{
+font-weight:bold !important;
+color:#00aaff !important;
+}
+
+/* round title */
+section h2{
+text-align:center !important;
+font-weight:bold !important;
+margin:20px 0 !important;
+}
