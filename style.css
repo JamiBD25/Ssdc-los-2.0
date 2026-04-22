@@ -238,90 +238,55 @@ padding:10px;
 display:flex !important ;
 }
 }
-/* 🔷 fixtures table improvement */
-table tr:hover {
-background: rgba(0,170,255,0.1);
-transition: 0.3s;
-}
+/* =========================
+   TABLE (FINAL CLEAN FIX)
+========================= */
 
-/* 🔷 motion dropdown row */
-.hidden{
-display:none;
-}
-
-/* 🔷 winner highlight */
-td.gold { color: gold; font-weight: bold; }
-td.silver { color: silver; font-weight: bold; }
-td.bronze { color: #cd7f32; font-weight: bold; }
-
-/* 🔷 button */
-.expand-btn{
-background:#00aaff;
-border:none;
-padding:5px 10px;
-color:black;
-border-radius:5px;
-cursor:pointer;
-}
-
-.expand-btn:hover{
-background:white;
-}
-/* ================= TABLE STYLE ================= */
-
-/* table full width */
+/* table layout */
 table{
 width:100%;
 border-collapse:collapse;
 margin-top:20px;
 }
 
-/* header + data center */
-th, td{
+/* header + data */
+table th,
+table td{
 text-align:center;
 padding:12px;
 border:1px solid white; /* 🔥 white border */
 }
 
 /* header style */
-th{
+table th{
 font-weight:bold;
 color:#00aaff;
+background:rgba(0,170,255,0.1);
 }
 
-/* ================= ROUND TITLE ================= */
+/* row hover */
+table tr:hover{
+background:rgba(0,170,255,0.1);
+transition:0.3s;
+}
+
+/* govt vs opposition color */
+.gov{
+color:#00ffcc;
+font-weight:bold;
+}
+
+.opp{
+color:#ff4d6d;
+font-weight:bold;
+}
+
+/* =========================
+   ROUND TITLE
+========================= */
 section h2{
 text-align:center;
 font-weight:bold;
-margin-bottom:15px;
+margin:20px 0;
 color:white;
-} 
-/* ================= FORCE TABLE FIX ================= */
-
-/* table full */
-table{
-width:100% !important;
-border-collapse:collapse !important;
-margin-top:20px;
-}
-
-/* সব data center + white border */
-table th,
-table td{
-text-align:center !important;
-padding:12px !important;
-border:1px solid white !important;
-}
-
-/* header bold + blue */
-table th{
-font-weight:bold !important;
-color:#00aaff !important;
-}
-
-/* round title center */
-section h2{
-text-align:center !important;
-font-weight:bold !important;
-margin:20px 0 !important;
 }
