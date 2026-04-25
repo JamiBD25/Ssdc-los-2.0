@@ -39,3 +39,272 @@ All rights reserved SSDC 2026 | Developer Nafis Jami
 <script src="script.js"></script >
 </body>
 </html>
+
+
+
+/* =========================
+   RESET + BASE
+========================= */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:linear-gradient(180deg,#332C24,#000,#332C24);
+color:#C9B9A1;
+scroll-behavior:smooth;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 18px;
+background:#332C24;
+position:sticky;
+top:0;
+z-index:1000;
+border-bottom:1px solid #684B35;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:38px;
+height:38px;
+border-radius:50%;
+}
+
+.nav-links{
+display:flex;
+gap:15px;
+list-style:none;
+}
+
+.nav-links a{
+color:#C9B9A1;
+text-decoration:none;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#816644;
+}
+
+/* =========================
+   HAMBURGER
+========================= */
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:#C9B9A1;
+}
+
+/* =========================
+   HOME
+========================= */
+.home{
+text-align:center;
+padding:90px 20px;
+background:radial-gradient(circle,#684B35,#332C24);
+}
+
+.title{
+font-family:'Creepster',cursive;
+font-size:42px;
+color:#C9B9A1;
+text-shadow:0 0 10px #816644;
+}
+
+/* =========================
+   SECTION
+========================= */
+section{
+padding:50px 20px;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+.drop-btn{
+background:#332C24;
+border:1px solid #684B35;
+color:#C9B9A1;
+padding:10px 15px;
+margin:5px;
+cursor:pointer;
+border-radius:8px;
+transition:0.3s;
+}
+
+.drop-btn:hover{
+background:#684B35;
+color:white;
+}
+
+.drop{
+display:none;
+padding:12px;
+margin-top:5px;
+background:rgba(200,185,161,0.08);
+border-left:3px solid #816644;
+}
+
+/* =========================
+   TABLE
+========================= */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+/* সব cell */
+table, th, td{
+border:1px solid #816644;
+}
+
+/* text center */
+th, td{
+text-align:center;
+padding:12px;
+}
+
+/* header */
+th{
+font-weight:bold;
+color:#C9B9A1;
+background:#332C24;
+}
+
+/* hover */
+table tr:hover{
+background:rgba(129,102,68,0.2);
+transition:0.3s;
+}
+
+/* govt vs opp */
+.gov{
+color:#C9B9A1;
+font-weight:bold;
+}
+
+.opp{
+color:#816644;
+font-weight:bold;
+}
+
+/* =========================
+   CARDS
+========================= */
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+}
+
+.card{
+width:200px;
+background:rgba(200,185,161,0.05);
+padding:15px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+box-shadow:0 0 10px rgba(129,102,68,0.2);
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px rgba(129,102,68,0.5);
+}
+
+.card img{
+width:90px;
+height:90px;
+border-radius:50%;
+border:2px solid #816644;
+margin-bottom:10px;
+}
+
+/* =========================
+   SOCIAL
+========================= */
+.social a{
+display:inline-block;
+margin:5px;
+color:#C9B9A1;
+text-decoration:none;
+transition:0.3s;
+}
+
+.social a:hover{
+color:#816644;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+.timeline{
+margin-top:10px;
+font-size:13px;
+opacity:0.8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer{
+text-align:center;
+padding:20px;
+background:#332C24;
+border-top:1px solid #684B35;
+margin-top:30px;
+color:#C9B9A1;
+}
+
+/* =========================
+   ROUND TITLE
+========================= */
+section h2{
+text-align:center;
+font-weight:bold;
+margin:20px 0;
+color:#C9B9A1;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+.nav-links{
+display:none;
+flex-direction:column;
+position:absolute;
+top:60px;
+right:0;
+background:#332C24;
+width:200px;
+padding:10px;
+}
+
+.nav-links.active{
+display:flex !important;
+}
+}
