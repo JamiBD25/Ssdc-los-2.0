@@ -1,12 +1,4 @@
-/* =========================
-   CUSTOM FONT (FORMULA 1)
-========================= */
-@font-face {
-font-family: "Formula1";
-src: url("fonts/Formula1-Bold.woff") format("woff");
-font-weight: normal;
-font-style: normal;
-}
+@import url('https://googleapis.com');
 /* =========================
    RESET + BASE
 ========================= */
@@ -86,7 +78,7 @@ background:radial-gradient(circle,#684B35,#332C24);
 }
 
 .title{
-font-family:'Formula1',Arial, sans-serif;
+font-family:'Orbitron', sans-serif;
 font-size:42px;
 color:#000000;
 text-shadow:0 0 9px #452209;
