@@ -86,10 +86,10 @@ background:radial-gradient(circle,#684B35,#332C24);
 }
 
 .title{
-font-family:'Creepster',cursive;
+font-family:'Formula1',Arial, sans-serif;
 font-size:42px;
-color:#C9B9A1;
-text-shadow:0 0 10px #816644;
+color:#000000;
+text-shadow:0 0 9px #000000;
 }
 
 /* =========================
