@@ -110,7 +110,7 @@ color:white;
 }
 
 .drop{
-display:none;
+display:none ! important;
 padding:12px;
 margin-top:5px;
 background:rgba(200,185,161,0.08);
