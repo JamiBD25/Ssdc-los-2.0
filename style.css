@@ -1,4 +1,13 @@
 /* =========================
+   CUSTOM FONT (FORMULA 1)
+========================= */
+@font-face {
+font-family: "Formula1";
+src: url("fonts/Formula1-Bold.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+/* =========================
    RESET + BASE
 ========================= */
 *{
