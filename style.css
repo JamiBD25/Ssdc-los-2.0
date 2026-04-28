@@ -115,7 +115,6 @@ margin-top:5px;
 background:rgba(200,185,161,0.08);
 border-left:3px solid #816644;
 }
-
 /* =========================
    TABLE
 ========================= */
@@ -135,9 +134,48 @@ border:1px solid black !important;
 th, td{
 text-align:center;
 padding:8px;
-word-wrap:break-word; /* 🔥 text wrap */
-white-space:normal;   /* 🔥 wrap allow */
+word-wrap:break-word;
+white-space:normal;
 font-size:14px;
+}
+
+/* 🔥 COLUMN WIDTH CONTROL */
+
+/* Rank ছোট */
+th:nth-child(1),
+td:nth-child(1){
+width:8%;
+}
+
+/* Name বড় */
+th:nth-child(2),
+td:nth-child(2){
+width:30%;
+font-weight:bold;
+}
+
+/* Played */
+th:nth-child(3),
+td:nth-child(3){
+width:12%;
+}
+
+/* Total */
+th:nth-child(4),
+td:nth-child(4){
+width:18%;
+}
+
+/* Avg */
+th:nth-child(5),
+td:nth-child(5){
+width:14%;
+}
+
+/* Details ছোট */
+th:nth-child(6),
+td:nth-child(6){
+width:10%;
 }
 
 /* header */
@@ -145,7 +183,7 @@ th{
 font-weight:bold;
 color:#f5e4cb;
 background:#332C24;
-font-size:10px
+font-size:11px; /* 🔥 একটু readable */
 }
 
 /* hover */
@@ -164,13 +202,14 @@ font-weight:bold;
 color:#f5e4cb;
 font-weight:bold;
 }
-  
+
+/* win */
 .win{
 color:#00ff00;
 font-weight:bold;
 }
 
-/* AVERAGE POINT STYLE */
+/* avg */
 .avg{
 color:#00aaff;
 font-weight:bold;
