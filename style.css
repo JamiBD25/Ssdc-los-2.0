@@ -144,7 +144,7 @@ font-size:14px;
 /* Rank ছোট */
 th:nth-child(1),
 td:nth-child(1){
-width:8%;
+width:9%;
 }
 
 /* Name বড় */
