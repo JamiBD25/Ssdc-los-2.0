@@ -75,6 +75,24 @@ All rights reserved SSDC 2026 | Developer Nafis Jami
 
 <!-- 🔥 JS -->
 <script src="script.js"></script>
+<script>
+function toggleDrop(id){
+let all = document.querySelectorAll(".drop");
 
+all.forEach(el=>{
+  if(el.id !== id){
+    el.style.display = "none";
+  }
+});
+
+let target = document.getElementById(id);
+
+if(target.style.display === "block"){
+  target.style.display = "none";
+}else{
+  target.style.display = "block";
+}
+}
+</script>
 </body>
 </html>
