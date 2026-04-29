@@ -344,12 +344,7 @@ z-index:-1;
 }
 
 /* 🔥 COVER IMAGE */
-.cover{
-width:100%;          /* 🔥 full width */
-height:auto;
-display:block;       /* 🔥 removes bottom gap */
-margin:0;
-}
+
 /* 🔥 FORCE HIDE FIX */
 .hidden{
 display:none !important;
