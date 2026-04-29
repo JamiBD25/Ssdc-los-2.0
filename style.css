@@ -344,47 +344,27 @@ z-index:-1;
 }
 
 /* 🔥 COVER IMAGE */
-/* cover container */
-.cover{
-position:relative;
-width:100%;
-overflow:hidden;
-}
-
-/* image */
+/* cover image */
 .cover-img{
 width:100%;
 display:block;
 }
 
-/* 🔥 fade effect */
-.cover-fade{
-position:absolute;
-bottom:0;
-left:0;
+/* 🔥 fade BELOW image */
+.cover-bottom-fade{
 width:100%;
 height:120px;
 
-/* smooth fade */
+/* fade from image → page bg */
 background:linear-gradient(to bottom,
 rgba(0,0,0,0) 0%,
-rgba(0,0,0,0.6) 60%,
+rgba(0,0,0,0.7) 60%,
 #000 100%);
-}
 
-/* 🔥 FORCE HIDE FIX */
-.hidden{
-display:none !important;
+/* একটু overlap দিলে smooth হয় */
+margin-top:-5px;
 }
-
-.center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-}
-
-/* button */
+/* 🔥 button */
 .prep-btn{
   background: linear-gradient(135deg, #8B5E3C, #A97142);
   color: white;
