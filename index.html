@@ -66,29 +66,7 @@
 <div id="g" class="drop">Guidelines content...</div>
 
 </section>
-
-<!-- 🔥 FINAL JAVASCRIPT -->
-<script>
-
-function toggleDrop(id){
-  let all = document.querySelectorAll(".drop");
-
-  all.forEach(el=>{
-    if(el.id !== id){
-      el.style.display = "none";
-    }
-  });
-
-  let target = document.getElementById(id);
-
-  if(target.style.display === "block"){
-    target.style.display = "none";
-  }else{
-    target.style.display = "block";
-  }
-}
-
-</script>
+<script src="index.js"></script>
 <!-- 🔷 FOOTER -->
 <footer>
 All rights reserved SSDC 2026 | Developer Nafis Jami
