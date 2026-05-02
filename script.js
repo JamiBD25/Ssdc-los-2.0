@@ -5,12 +5,20 @@ document.getElementById("navLinks").classList.toggle("active");
 
 /* 🔥 dropdown */
 function toggleDrop(id){
-let el = document.getElementById(id);
+let all = document.querySelectorAll(".drop");
 
-if(el.style.display === "block"){
-el.style.display = "none";
+all.forEach(el=>{
+  if(el.id !== id){
+    el.style.display = "none";
+  }
+});
+
+let target = document.getElementById(id);
+
+if(target.style.display === "block"){
+  target.style.display = "none";
 }else{
-el.style.display = "block";
+  target.style.display = "block";
 }
 }
 
@@ -18,6 +26,7 @@ el.style.display = "block";
 function toggleRow(id){
 document.getElementById(id).classList.toggle("hidden");
 }
+
 /* 🔥 speaker auto rank */
 document.addEventListener("DOMContentLoaded", function () {
     autoRank();
@@ -67,22 +76,4 @@ function autoRank() {
         table.appendChild(item.main);
         table.appendChild(item.detail);
     });
-}
-/* 🔥 dropdown batton */
-function toggleDrop(id){
-let all = document.querySelectorAll(".drop");
-
-all.forEach(el=>{
-  if(el.id !== id){
-    el.style.display = "none";
-  }
-});
-
-let target = document.getElementById(id);
-
-if(target.style.display === "block"){
-  target.style.display = "none";
-}else{
-  target.style.display = "block";
-}
 }
