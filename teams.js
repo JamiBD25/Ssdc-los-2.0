@@ -2,18 +2,33 @@
 function toggleMenu(){
 document.getElementById("navLinks").classList.toggle("active");
 }
+/* 🔥 DROPDOWN FIX */
+function toggleRow(id){
 
-/* 🔥 dropdown */
-function toggleDrop(id){
-let el = document.getElementById(id);
+    let all = document.querySelectorAll("tr.hidden");
 
-if(el.style.display === "block"){
-el.style.display = "none";
-}else{
-el.style.display = "block";
+    // সব close
+    all.forEach(el=>{
+        if(el.id !== id){
+            el.style.display = "none";
+        }
+    });
+
+    let row = document.getElementById(id);
+
+    if(row.style.display === "table-row"){
+        row.style.display = "none";
+    }else{
+        row.style.display = "table-row";
+    }
 }
-}
 
+/* 🔥 INIT HIDE */
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("tr.hidden").forEach(el=>{
+        el.style.display = "none";
+    });
+});
 /* 🔥 table expand */
 function toggleRow(id){
 document.getElementById(id).classList.toggle("hidden");
