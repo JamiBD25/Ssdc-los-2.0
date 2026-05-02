@@ -1,6 +1,12 @@
 /* 🔥 HAMBURGER */
 function toggleMenu(){
-    document.getElementById("navLinks").classList.toggle("active");
+  let nav = document.getElementById("navLinks");
+
+  if(nav){
+    nav.classList.toggle("active");
+  }else{
+    console.log("navLinks NOT FOUND ❌");
+  }
 }
 
 /* 🔥 TABLE ROW TOGGLE */
