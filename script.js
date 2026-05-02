@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function autoRank() {
     let table = document.querySelector("table");
+    if (!table) return;
 
     // সব main row (hidden বাদে)
     let rows = [];
@@ -48,11 +49,15 @@ function autoRank() {
 
             let hiddenRow = allRows[i + 1]; // detail row
 
-            rows.push({
-                main: row,
-                detail: hiddenRow,
-                avg: parseFloat(row.querySelector(".avg").innerText)
-            });
+            // avgclass check
+            let avgElement = row.querySelector(".avg");
+            if (avgElement) {
+                rows.push({
+                    main: row.cloneNode(true),
+                    detail: hiddenRow.cloneNode(true),
+                    avg: parseFloat(avgElement.innerText)
+                });
+            }
         }
     }
 
