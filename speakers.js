@@ -8,8 +8,7 @@ function toggleMenu(){
     console.log("navLinks NOT FOUND ❌");
   }
 }
-
-/* 🔥 TABLE ROW TOGGLE */
+/* 🔥 DROPDOWN ROW */
 function toggleRow(id){
     let row = document.getElementById(id);
     row.classList.toggle("hidden");
@@ -18,6 +17,7 @@ function toggleRow(id){
 /* 🔥 AUTO RANK */
 document.addEventListener("DOMContentLoaded", function () {
 
+    // hide all dropdown rows
     document.querySelectorAll(".hidden").forEach(el=>{
         el.style.display = "none";
     });
@@ -32,20 +32,22 @@ function autoRank() {
     let rows = [];
     let allRows = Array.from(table.querySelectorAll("tr"));
 
-    for (let i = 0; i < allRows.length; i++) {
+    for (let i = 1; i < allRows.length; i++) {
+
         let row = allRows[i];
 
-        if (!row.classList.contains("hidden") && !row.querySelector("th")) {
+        if (!row.classList.contains("hidden")) {
 
-            let hiddenRow = allRows[i + 1];
-            let avgElement = row.querySelector(".avg");
+            let detailRow = allRows[i + 1];
+            let avgEl = row.querySelector(".avg");
 
-            if (avgElement) {
+            if (avgEl && detailRow) {
                 rows.push({
-                    main: row.cloneNode(true),
-                    detail: hiddenRow.cloneNode(true),
-                    avg: parseFloat(avgElement.innerText)
+                    main: row,
+                    detail: detailRow,
+                    avg: parseFloat(avgEl.innerText)
                 });
+                i++;
             }
         }
     }
@@ -59,7 +61,10 @@ function autoRank() {
     let rank = 1;
 
     rows.forEach(item => {
+
         item.main.cells[0].innerText = rank++;
+        item.detail.classList.add("hidden");
+
         table.appendChild(item.main);
         table.appendChild(item.detail);
     });
