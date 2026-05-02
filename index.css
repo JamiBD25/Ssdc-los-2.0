@@ -1,0 +1,184 @@
+/* =========================
+   RESET + BASE
+========================= */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:linear-gradient(180deg,#332C24,#000,#332C24);
+color:#f5e4cb;
+scroll-behavior:smooth;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 18px;
+background:#332C24;
+position:sticky;
+top:0;
+z-index:1000;
+border-bottom:1px solid #684B35;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:38px;
+height:38px;
+border-radius:50%;
+}
+
+.nav-links{
+display:none;
+gap:15px;
+list-style:none;
+}
+
+.nav-links a{
+color:#f5e4cb;
+text-decoration:none;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#816644;
+}
+
+/* =========================
+   HAMBURGER
+========================= */
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:#f5e4cb;
+}
+
+/* =========================
+   HOME
+========================= */
+.home{
+text-align:center;
+padding:90px 20px;
+background:radial-gradient(circle,#684B35,#332C24);
+}
+
+.title{
+font-family:'Orbitron', sans-serif;
+font-size:42px;
+color:#000000;
+text-shadow:2px 2px 0px #e10600, 4px 4px 10px rgba(225, 6, 0, 0.5);
+}
+/* =========================
+   SECTION
+========================= */
+section{
+padding:50px 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer{
+text-align:center;
+padding:20px;
+background:#332C24;
+border-top:1px solid #684B35;
+margin-top:30px;
+color:#f5e4cb;
+}
+
+/* =========================
+   ROUND TITLE
+========================= */
+section h2{
+text-align:center;
+font-weight:bold;
+margin:20px 0;
+color:#f5e4cb;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+.nav-links{
+display:none;
+flex-direction:column;
+position:absolute;
+top:60px;
+right:0;
+background:#332C24;
+width:200px;
+padding:10px;
+}
+
+.nav-links.active{
+display:flex !important;
+}
+}
+/* =========================
+   HERO PERFECT ALIGN FIX
+========================= */
+.hero{
+width:100%;
+height:auto; /* 🔥 height remove */
+display:block;
+margin:0;
+padding:0;
+}
+
+/* 🔥 FIXED BACKGROUND */
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background:url("https://i.postimg.cc/Kjq6qNh9/Background.png") no-repeat center center/cover;
+
+filter:blur(6px) brightness(0.5);
+z-index:-1;
+}
+
+/* 🔥 COVER IMAGE */
+/* cover image */
+.cover-img{
+width:100%;
+display:block;
+}
+
+/* 🔥 fade BELOW image */
+.cover-bottom-fade{
+width:100%;
+height:120px;
+
+/* fade from image → page bg */
+background:linear-gradient(from bottom,
+rgba(0,0,0,0) 0%,
+rgba(0,0,0,0.7) 60%,
+#000 100%);
+
+/* একটু overlap দিলে smooth হয় */
+margin-top:-5px;
+}
