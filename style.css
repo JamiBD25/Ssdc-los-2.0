@@ -136,7 +136,7 @@ color:white;
 
 /* dropdown content */
 .drop{
-display:none;
+display:none !important;
 padding:10px;
 background:rgba(255,255,255,0.05);
 margin:5px 0 10px 0;
@@ -144,7 +144,7 @@ border-radius:8px;
 }
 
 .drop{
-display:none! important;
+display:none		;
 padding:12px;
 margin-top:5px;
 background:rgba(200,185,161,0.08);
