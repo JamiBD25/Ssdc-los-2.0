@@ -8,12 +8,34 @@ function toggleMenu(){
     console.log("navLinks NOT FOUND ❌");
   }
 }
-/* 🔥 DROPDOWN ROW */
+
+/* 🔥 DROPDOWN FIX */
 function toggleRow(id){
+
+    let all = document.querySelectorAll("tr.hidden");
+
+    // সব close
+    all.forEach(el=>{
+        if(el.id !== id){
+            el.style.display = "none";
+        }
+    });
+
     let row = document.getElementById(id);
-    row.classList.toggle("hidden");
+
+    if(row.style.display === "table-row"){
+        row.style.display = "none";
+    }else{
+        row.style.display = "table-row";
+    }
 }
 
+/* 🔥 INIT HIDE */
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("tr.hidden").forEach(el=>{
+        el.style.display = "none";
+    });
+});
 /* 🔥 AUTO RANK */
 document.addEventListener("DOMContentLoaded", function () {
 
