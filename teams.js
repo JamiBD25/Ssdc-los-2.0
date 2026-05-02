@@ -2,31 +2,34 @@
 function toggleMenu(){
 document.getElementById("navLinks").classList.toggle("active");
 }
-/* 🔥 DROPDOWN FIX */
-function toggleRow(id){
+/* 🔥 DROPDOWN (EVENT LISTENER BASED) */
+document.addEventListener("click", function(e){
 
-    let all = document.querySelectorAll("tr.hidden");
+    if(e.target.classList.contains("toggle-btn")){
 
-    // সব close
-    all.forEach(el=>{
-        if(el.id !== id){
-            el.style.display = "none";
+        let id = e.target.getAttribute("data-id");
+        let row = document.getElementById(id);
+
+        // close others
+        document.querySelectorAll(".hidden").forEach(r=>{
+            if(r.id !== id){
+                r.style.display = "none";
+            }
+        });
+
+        // toggle
+        if(row.style.display === "table-row"){
+            row.style.display = "none";
+        }else{
+            row.style.display = "table-row";
         }
-    });
-
-    let row = document.getElementById(id);
-
-    if(row.style.display === "table-row"){
-        row.style.display = "none";
-    }else{
-        row.style.display = "table-row";
     }
-}
+});
 
 /* 🔥 INIT HIDE */
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll("tr.hidden").forEach(el=>{
-        el.style.display = "none";
+document.addEventListener("DOMContentLoaded", function(){
+    document.querySelectorAll(".hidden").forEach(r=>{
+        r.style.display = "none";
     });
 });
 /* 🔥 table expand */
