@@ -10,27 +10,36 @@ function toggleMenu(){
     console.log("navLinks NOT FOUND ❌");
   }
 }
+/* 🔥 DROPDOWN SYSTEM (CLEAN + FIXED) */
 
-/* 🔥 DROPDOWN */
-function toggleDrop(id){
-  let target = document.getElementById(id);
+document.addEventListener("click", function(e){
 
-  if(!target){
-    console.log("Dropdown NOT FOUND ❌");
-    return;
-  }
+    if(e.target.classList.contains("drop-btn")){
 
-  let all = document.querySelectorAll(".drop");
+        let id = e.target.getAttribute("data-target");
+        let target = document.getElementById(id);
 
-  all.forEach(el=>{
-    if(el !== target){
-      el.style.display = "none";
+        if(!target) return;
+
+        // 🔥 close others
+        document.querySelectorAll(".drop").forEach(el=>{
+            if(el.id !== id){
+                el.style.display = "none";
+            }
+        });
+
+        // 🔥 toggle current
+        if(target.style.display === "block"){
+            target.style.display = "none";
+        }else{
+            target.style.display = "block";
+        }
     }
-  });
+});
 
-  if(target.style.display === "block"){
-    target.style.display = "none";
-  }else{
-    target.style.display = "block";
-  }
-}
+/* 🔥 INIT - all hidden */
+document.addEventListener("DOMContentLoaded", function(){
+    document.querySelectorAll(".drop").forEach(el=>{
+        el.style.display = "none";
+    });
+});
