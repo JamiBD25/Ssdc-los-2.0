@@ -47,28 +47,75 @@
 
 </div>
 </section>
-<!-- 🔷 DROPDOWN SECTION -->
-<section class="dropdown-section">
+<!-- 🔷 BUTTON SECTION -->
+<section class="los-section">
 
-<button class="drop-btn full" data-target="about1">About SSDC</button>
-<div id="about1" class="drop">About SSDC content...</div>
+  <!-- Button 1 -->
+  <button class="los-btn" onclick="toggleLOS('aboutLos')">
+    About League of Spars 2.0
+  </button>
 
-<button class="drop-btn full" data-target="about2">About LoS 2.0</button>
-<div id="about2" class="drop">About LoS content...</div>
+  <div id="aboutLos" class="los-content">
+    <p>
+      After a successful debut featuring 100+ participants and 150+ debates,
+      SSDC League of Spars returns with Season 2—more competitive,
+      structured, and impactful.
+    </p>
 
-<div class="row">
+    <p>
+      Organized entirely by students, LOS S2 reflects the strength of youth
+      leadership, collaboration, and intellectual exchange.
+    </p>
 
-    <button class="drop-btn" data-target="rules">Rules</button>
-    <button class="drop-btn" data-target="res">Resolution</button>
-    <button class="drop-btn" data-target="g">Guidelines</button>
+    <p>
+      The league follows the AP ISC format where every institution competes
+      against every other institution once during the season.
+    </p>
 
-</div>
+    <p>
+      All preliminary rounds will be online via Discord while the Finals
+      will be held physically.
+    </p>
+  </div>
 
-<div id="rules" class="drop">Rules content...</div>
-<div id="res" class="drop">Resolution content...</div>
-<div id="g" class="drop">Guidelines content...</div>
+
+  <!-- Button 2 -->
+  <button class="los-btn" onclick="toggleLOS('rulesLos')">
+    Rules
+  </button>
+
+  <div id="rulesLos" class="los-content">
+    <ul>
+      <li>Participation in every debate is mandatory.</li>
+      <li>All clubs must review the rules and submit required forms.</li>
+      <li>The league will follow AP ISC format.</li>
+      <li>All preliminary rounds will be held online via Discord.</li>
+      <li>Failure to attend within deadline results in walkover.</li>
+      <li>One week out of every four will be a silent week.</li>
+      <li>A nominal registration fee will be collected.</li>
+      <li>Finals will be held physically.</li>
+    </ul>
+  </div>
+
+
+  <!-- Button 3 -->
+  <button class="los-btn" onclick="toggleLOS('guidelinesLos')">
+    Guidelines
+  </button>
+
+  <div id="guidelinesLos" class="los-content">
+    <ul>
+      <li>Each institution must maintain at least 5 debaters.</li>
+      <li>Every debater must participate in at least two-thirds of debates.</li>
+      <li>Participation should be reasonably balanced.</li>
+      <li>Executives must coordinate schedules with opponents.</li>
+      <li>Additional activities may include matter sessions and motion discussions.</li>
+      <li>Special recognitions like Debater of the Month will be awarded.</li>
+    </ul>
+  </div>
 
 </section>
+
 <script src="index.js"></script>
 <!-- 🔷 FOOTER -->
 <footer>
