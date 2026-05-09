@@ -243,79 +243,85 @@ rgba(0,0,0,0.7) 60%,
 margin-top:-5px;
 }
 /* =========================
-   📍 LOS DROPDOWN SECTION
+   🍫 LOS SECTION
 ========================= */
 
 .los-section{
 width:100%;
-max-width:700px;
+max-width:100%;
 margin:auto;
+padding:10px 0;
 }
 
-/* 🔷 buttons */
+/* 🔘 FULL WIDTH BUTTON */
 .los-btn{
 width:100%;
 display:block;
 
-background:#332C24;
-border:1px solid #684B35;
-color:#f5e4cb;
+background:#3b2a1f;          /* chocolate */
+border:1px solid #6b4a33;
 
-padding:12px 15px;
-margin:8px 0;
+color:#f8e7d0;
+
+padding:14px 18px;
+margin:10px 0;
 
 cursor:pointer;
-border-radius:8px;
+border-radius:10px;
 
-transition:0.3s;
-font-weight:bold;
-font-size:16px;
+font-size:17px;
+font-weight:700;
+
+text-align:left;
+
+transition:0.3s ease;
+box-sizing:border-box;
 }
 
-/* 🔷 hover */
+/* ✨ HOVER */
 .los-btn:hover{
-background:#684B35;
+background:#5a3d2b;
+border-color:#8a5b3d;
 color:white;
 }
 
-/* 🔷 dropdown content */
+/* 📦 DROPDOWN CONTENT */
 .los-content{
 display:none;
 
-padding:14px;
-margin-top:5px;
-margin-bottom:10px;
+width:100%;
+box-sizing:border-box;
 
-background:rgba(200,185,161,0.08);
+padding:16px;
+margin-top:-4px;
+margin-bottom:12px;
 
-border-left:3px solid #816644;
-border-radius:8px;
+background:rgba(90,61,43,0.18);
+
+border-left:4px solid #8a5b3d;
+border-radius:0 0 10px 10px;
 
 color:#f5e4cb;
-line-height:1.7;
+line-height:1.8;
+
+animation:fadeDown 0.3s ease;
 }
 
-/* 🔷 list style */
+/* 📋 LIST */
 .los-content ul{
-padding-left:20px;
+padding-left:22px;
 margin:0;
 }
 
 .los-content li{
-margin-bottom:8px;
+margin-bottom:10px;
 }
 
-/* 🔷 smooth animation */
-.los-content.show{
-display:block;
-animation:fadeDown 0.3s ease;
-}
-
-/* 🔷 animation */
+/* ✨ animation */
 @keyframes fadeDown{
 from{
 opacity:0;
-transform:translateY(-5px);
+transform:translateY(-6px);
 }
 to{
 opacity:1;
