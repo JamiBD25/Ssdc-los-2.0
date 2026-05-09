@@ -44,15 +44,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
 function toggleLOS(id){
 
-  let content = document.getElementById(id);
+  // সব content hide করবে
+  let allContents = document.querySelectorAll(".los-content");
 
-  if(content.style.display === "block"){
-    content.style.display = "none";
+  allContents.forEach(content => {
+    if(content.id !== id){
+      content.style.display = "none";
+    }
+  });
+
+  // clicked content toggle করবে
+  let current = document.getElementById(id);
+
+  if(current.style.display === "block"){
+    current.style.display = "none";
   }else{
-    content.style.display = "block";
+    current.style.display = "block";
   }
 
 }
