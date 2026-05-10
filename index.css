@@ -197,8 +197,8 @@ margin-top:-5px;
     color: #f5e4cb; !important
     
     /* দুই পাশে অল্প ফাঁকা জায়গা */
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 15px; !important
+    padding-right: 15px; !important
 
     text-align: justify;
 }
