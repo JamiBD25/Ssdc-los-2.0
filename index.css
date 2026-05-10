@@ -186,7 +186,7 @@ margin-top:-5px;
     font-size: 32px;
     font-weight: bold;
     text-align: left;
-    color: #f5e4cb;
+    color: #f5e4cb; !important
     margin-bottom: 10px;
 }
 
@@ -194,7 +194,7 @@ margin-top:-5px;
 .des{
     font-size: 15px;
     line-height: 1.7;
-    color: #f5e4cb;
+    color: #f5e4cb; !important
     
     /* দুই পাশে অল্প ফাঁকা জায়গা */
     padding-left: 15px;
