@@ -189,6 +189,13 @@ margin-top:-5px;
     color: #f5e4cb; !important
     margin-bottom: 10px;
 }
+.hl2{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    color: #f5e4cb; !important
+    margin-bottom: 10px;
+}
 
 /* 📝 Description Style */
 .des{
