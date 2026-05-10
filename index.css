@@ -188,6 +188,7 @@ margin-top:-5px;
     text-align: left;
     color: #f5e4cb; !important
     margin-bottom: 10px;
+			padding: 0 15px;
 }
 .hl2{
     font-size: 21px;
@@ -195,6 +196,7 @@ margin-top:-5px;
     text-align: left;
     color: #f5e4cb; !important
     margin-bottom: 10px;
+			padding: 0 15px;
 }
 
 /* 📝 Description Style */
@@ -203,6 +205,7 @@ margin-top:-5px;
     line-height: 1.7;
     color: #f5e4cb; !important
     text-align: justify;
+			padding: 0 15px;
 }
 .des{
     padding: 0 15px;
