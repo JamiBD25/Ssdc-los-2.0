@@ -181,3 +181,24 @@ rgba(0,0,0,0.7) 60%,
 /* একটু overlap দিলে smooth হয় */
 margin-top:-5px;
 }
+/* 🔥 Heading Style */
+.hl{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* 📝 Description Style */
+.des{
+    font-size: 15px;
+    line-height: 1.7;
+    color: #ddd;
+    
+    /* দুই পাশে অল্প ফাঁকা জায়গা */
+    padding-left: 15px;
+    padding-right: 15px;
+
+    text-align: justify;
+}
