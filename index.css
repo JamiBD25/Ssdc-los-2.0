@@ -195,12 +195,10 @@ margin-top:-5px;
     font-size: 15px;
     line-height: 1.7;
     color: #f5e4cb; !important
-    
-    /* দুই পাশে অল্প ফাঁকা জায়গা */
-    padding-left: 15px; !important
-    padding-right: 15px; !important
-
     text-align: justify;
+}
+.des{
+    padding: 0 15px;
 }
 .container{
     padding: 0 15px;
