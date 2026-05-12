@@ -109,7 +109,7 @@ color:white;
 }
 
 .drop{
-display:none ! important;
+display:none ;
 padding:12px;
 margin-top:5px;
 background:rgba(200,185,161,0.08);
