@@ -420,10 +420,9 @@ margin-top:-5px;
 
 /* hover glow stronger */
 .prep-btn:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 0 15px #A97142,
-              0 0 30px #A97142,
-              0 0 50px rgba(169,113,66,0.9);
+  transform: translateY(-1px);
+  box-shadow: 0 0 6px #A97142,
+              0 0 12px rgba(169,113,66,0.6);
 }
 
 /* click effect */
