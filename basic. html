@@ -53,3 +53,14 @@ All rights reserved SSDC 2026 | Developer Nafis Jami
 
 </body>
 </html>
+
+
+   <!-- 🔷 MENU -->
+    <ul id="navLinks" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="adjudicators.html">adjudicators</a></li>
+        <li><a href="fixtures.html">Fixtures</a></li> 
+					<li><a href="materials.html">Materials</a></li>
+    </ul>
