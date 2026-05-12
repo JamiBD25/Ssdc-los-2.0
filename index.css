@@ -66,7 +66,9 @@ font-size:28px;
 cursor:pointer;
 color:#f5e4cb;
 }
-
+.nav-links.active{
+display:flex;
+}
 /* =========================
    HOME
 ========================= */
