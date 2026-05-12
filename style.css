@@ -403,7 +403,6 @@ margin-top:-5px;
 .prep-btn{
   background: linear-gradient(135deg, #8B5E3C, #A97142);
   color: white;
- 		align-items:center;
   font-weight: 800;
   font-size: 18px;
   padding: 14px 30px;
@@ -431,7 +430,9 @@ margin-top:-5px;
 .prep-btn:active{
   transform: scale(0.96);
 }
-
+.center{
+text-align:center;
+}
 
 
 
