@@ -61,7 +61,7 @@ color:#816644;
    HAMBURGER
 ========================= */
 .menu-toggle{
-display:none;
+display: block;
 font-size:28px;
 cursor:pointer;
 color:#f5e4cb;
