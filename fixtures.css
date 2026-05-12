@@ -145,15 +145,15 @@ color:#f5e4cb;
 font-weight:bold;
 }
 th:nth-child(1), td:nth-child(1){
-  width:45%;
+  width:42%;
 }
 
 th:nth-child(2), td:nth-child(2){
-  width:45%;
+  width:42%;
 }
 
 th:nth-child(3), td:nth-child(3){
-  width:10%;
+  width:16%;
 }
 
 .gov, .opp,.venue{
