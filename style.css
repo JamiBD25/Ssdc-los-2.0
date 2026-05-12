@@ -42,7 +42,7 @@ border-radius:50%;
 }
 
 .nav-links{
-display:none;
+display:flex;
 gap:15px;
 list-style:none;
 }
@@ -61,7 +61,7 @@ color:#816644;
    HAMBURGER
 ========================= */
 .menu-toggle{
-display:block;
+display:none;
 font-size:28px;
 cursor:pointer;
 color:#f5e4cb;
