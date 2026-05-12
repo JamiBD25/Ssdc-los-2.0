@@ -144,10 +144,16 @@ background:#332C24;
 color:#f5e4cb;
 font-weight:bold;
 }
+th:nth-child(1), td:nth-child(1){
+  width:45%;
+}
 
-th:nth-child(1), td:nth-child(1),
 th:nth-child(2), td:nth-child(2){
-width:50%;
+  width:45%;
+}
+
+th:nth-child(3), td:nth-child(3){
+  width:10%;
 }
 
 .gov, .opp,.venue{
