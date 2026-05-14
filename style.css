@@ -255,12 +255,21 @@ font-weight:bold;
 /* =========================
    CARDS
 ========================= */
+/* ======================
+   CARD GRID LAYOUT
+====================== */
+
 .cards{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-justify-content:center;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+justify-items:center;
+padding:20px;
 }
+
+/* ======================
+   CARD DESIGN
+====================== */
 
 .card{
 width:200px;
@@ -277,16 +286,61 @@ transform:translateY(-5px);
 box-shadow:0 0 20px rgba(129,102,68,0.5);
 }
 
+/* IMAGE PLACEHOLDER */
+
 .card img{
 width:90px;
 height:90px;
 border-radius:50%;
 border:2px solid #816644;
 margin-bottom:10px;
+background:#222; /* image না থাকলেও circle দেখাবে */
 }
+
+/* NAME */
+
+.card h3{
+color:#f5e4cb;
+margin-bottom:4px;
+font-size:18px;
+}
+
+/* DESIGNATION */
+
+.card h5{
+color:#c8b9a1;
+font-weight:400;
+margin-bottom:10px;
+}
+
+/* EMAIL ICON */
+
 .email-icon{
-color:#f5e4cb ;
+color:#f5e4cb;
 font-size:30px;
+transition:.3s;
+}
+
+.email-icon:hover{
+color:#816644;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+
+/* Tablet */
+@media(max-width:992px){
+.cards{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+/* Mobile */
+@media(max-width:600px){
+.cards{
+grid-template-columns:1fr;
+}
 }
 /* =========================
    FOOTER
