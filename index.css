@@ -250,3 +250,7 @@ margin-top:-5px;
 .center{
 text-align:center;
 }
+a{
+  color: inherit;        /* আগের টেক্সটের কালার নিবে */
+  text-decoration: none; /* underline remove */
+}
