@@ -284,31 +284,10 @@ border-radius:50%;
 border:2px solid #816644;
 margin-bottom:10px;
 }
-
-/* =========================
-   SOCIAL
-========================= */
-.social a{
-display:inline-block;
-margin:5px;
-color:#f5e4cb;
-text-decoration:none;
-transition:0.3s;
+.email-icon{
+color:#f5e4cb ;
+font-size:30px;
 }
-
-.social a:hover{
-color:#816644;
-}
-
-/* =========================
-   TIMELINE
-========================= */
-.timeline{
-margin-top:10px;
-font-size:13px;
-opacity:0.8;
-}
-
 /* =========================
    FOOTER
 ========================= */
