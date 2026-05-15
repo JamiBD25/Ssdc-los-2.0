@@ -498,10 +498,10 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
 ========================= */
 /* Container Layout and Theme Setup */
 .developer-footer {
-  background-color: #1F1A17; /* Sleek slate background */
-  color: #1F1A17;
+  background-color: #1F1A17; /* Dark Chocolate Background */
+  color: #F5F1EC; /* Soft chocolate white */
   padding: 1.25rem 2rem;
-  border-top: 1px solid #1e293b;
+  border-top: 1px solid #3a2f29;
   font-family: system-ui, -apple-system, sans-serif;
 }
 
@@ -515,7 +515,7 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
   gap: 1.5rem;
 }
 
-/* Rounded Developer Profile Formatting */
+/* Developer Profile */
 .dev-profile {
   display: flex;
   align-items: center;
@@ -527,7 +527,7 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #3b82f6; /* Accent color ring */
+  border: 2px solid #c9b8a7; /* Light chocolate ring */
 }
 
 .dev-info {
@@ -537,7 +537,7 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
 
 .dev-title {
   font-size: 0.75rem;
-  color: #1F1A17;
+  color: #E8DED4; /* chocolate white */
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -545,39 +545,40 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
 .dev-name {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #1F1A17;
+  color: #F5F1EC;
 }
 
-/* Typography for Main Copyright Area */
+/* Copyright Text */
 .footer-copyright p {
   margin: 0;
   font-size: 0.875rem;
   text-align: center;
+  color: #E8DED4;
 }
 
-/* Typography and Animations for Right Anchors */
+/* Social Links */
 .dev-social-links {
   display: flex;
   gap: 1.25rem;
 }
 
 .dev-link {
-  color: #1F1A17;
+  color: #F5F1EC;
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .dev-link:hover {
-  colour:#1F1A17;
-  transform: translateY(-1px);
+  color: #d6c6b6; /* hover chocolate glow */
+  transform: translateY(-2px);
 }
 
-/* Layout Fallbacks for Small Displays */
+/* Responsive */
 @media (max-width: 768px) {
   .footer-credit-container {
     flex-direction: column;
