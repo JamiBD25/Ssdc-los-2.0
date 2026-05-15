@@ -499,7 +499,7 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
 /* Container Layout and Theme Setup */
 .developer-footer {
   background-color: #1F1A17; /* Sleek slate background */
-  color: #94a3b8;
+  color: #1F1A17;
   padding: 1.25rem 2rem;
   border-top: 1px solid #1e293b;
   font-family: system-ui, -apple-system, sans-serif;
@@ -537,7 +537,7 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
 
 .dev-title {
   font-size: 0.75rem;
-  color: #64748b;
+  color: #1F1A17;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -545,7 +545,7 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
 .dev-name {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #f8fafc;
+  color: #1F1A17;
 }
 
 /* Typography for Main Copyright Area */
@@ -562,7 +562,7 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
 }
 
 .dev-link {
-  color: #94a3b8;
+  color: #1F1A17;
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 500;
@@ -573,7 +573,7 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
 }
 
 .dev-link:hover {
-  colour:#332C24;
+  colour:#1F1A17;
   transform: translateY(-1px);
 }
 
