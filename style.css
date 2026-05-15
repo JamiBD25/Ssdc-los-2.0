@@ -573,7 +573,7 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
 }
 
 .dev-link:hover {
-  color: #3b82f6;
+  colour:#332C24;
   transform: translateY(-1px);
 }
 
