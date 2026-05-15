@@ -596,3 +596,30 @@ box-shadow:0 0 5px rgba(76,175,80,0.5);
     justify-content: center;
   }
 }
+.dev-social-links{
+  display:flex;
+  gap:12px;
+}
+
+.dev-link{
+  text-decoration:none;
+  padding:8px 14px;
+  border-radius:8px;
+  color:white;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+}
+
+.web-link{
+  background:#444;
+}
+
+.fb-link{
+  background:#1877f2;
+}
+
+.dev-link:hover{
+  opacity:0.8;
+}
